@@ -1,0 +1,44 @@
+
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Adaptive Card"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Text:"
+                        }
+                    ],
+                    "width": 20
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Input.Text",
+                            "id": "userText",
+                            "placeholder": "Enter Some Text"
+                        }
+                    ],
+                    "width": 80
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

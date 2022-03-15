@@ -1,0 +1,194 @@
+
+> LUIS application information
+> !# @app.name = NSTU101
+> !# @app.versionId = 0.1
+> !# @app.culture = en-us
+> !# @app.luis_schema_version = 7.0.0
+> !# @app.tokenizerVersion = 1.0.0
+
+
+> # Intent definitions
+
+# Department.query
+- {@department.types=computer science and telecommunication engineering}
+- {@department.types=cse}
+- {@department.types=cste}
+- {@department.types=eee}
+- {@department.types=electrical and electronic engineering}
+- how many {@department.types=department} in our university?
+- {@department.types=ice}
+- {@department.types=information and communication engineering}
+- {@Web.search=total department}
+- which {@department.types=department} is best?
+
+
+# None
+
+
+> !# @intent.inherits = name : Web.websearch; domain_name : Web; model_name : WebSearch
+
+# Web.websearch
+- {@Web.search=amazon.com}
+- {@Web.search=amazon.com} let s go back to it
+- {@Web.search=ancestry login}
+- {@Web.search=aramex .com}
+- {@Web.search=bethesda .net}
+- bing {@Web.search=facebook webpage}
+- can i go to {@Web.search=wiki}
+- can i see the {@Web.search=instagram} website
+- can you go to {@Web.search=www.wikipedia.com}
+- can you navigate me to {@Web.search=www.wikipedia.com}
+- can you open the website {@Web.search=wiki} for me
+- can you take me to {@Web.search=outlook.com}?
+- check {@Web.search=house prices in the united states} on bing.com
+- check the {@Web.search=fox news} website
+- could you go to {@Web.search=www.wikipedia.com}
+- could you please go to {@Web.search=www.wikipedia.com}
+- could you please navigate to {@Web.search=www.wikipedia.com}
+- discover {@Web.search=political books}
+- explore {@Web.search=aquarius} in search engine
+- explore {@Web.search=deep learning} in google.com
+- explore {@Web.search=movies} in google.com
+- explore {@Web.search=wechat} in search engine
+- {@Web.search=facebook.com}
+- {@Web.search=facebook.com} open
+- find {@Web.search=news} in bing.com
+- get me to {@Web.search=luis.ai}
+- {@Web.search=gmail.com} please
+- go to {@Web.search=amazon}
+- go to {@Web.search=bing}
+- go to {@Web.search=ebay}
+- go to {@Web.search=facebook}
+- go to {@Web.search=paypal}
+- go to the {@Web.search=fox news} website
+- go to {@Web.search=walmart.com}
+- go to {@Web.search=wiki}
+- go to {@Web.search=wikipedia}
+- go to {@Web.search=www.bankrate.com}
+- go to {@Web.search=www.smile.amazon.com}
+- go to {@Web.search=www.target.com}
+- go to {@Web.search=www.wikipedia.com}
+- go to {@Web.search=www.yahoo.com}
+- {@Web.search=google maps} website
+- google the website of {@Web.search=tmall}
+- {@Web.search=google.com}
+- {@Web.search=how to buy bitcoin}, msn it
+- i need the website {@Web.search=www.wikipedia.com} opened
+- i want to get the information about {@Web.search=basketball}
+- i want to get the information about {@Web.search=sylvester stallone}
+- i want to know the {@Web.search=election results}
+- i want to open {@Web.search=amazon} to search out {@Web.search=books about sql server}
+- i want to open yahoo to search out {@Web.search=cookbook}
+- let us go to the google.com to search {@Web.search=house prices in the united states}
+- let us go to the google.com to search {@Web.search=marvel movies}
+- {@Web.search=msn.com homepage}
+- navigate me to website {@Web.search=wiki}
+- navigate to {@Web.search=wiki at www.wikipedia.com}
+- navigate to {@Web.search=www.wikipedia.com}
+- {@Web.search=netflix.com} for me
+- {@Web.search=notre dame de paris}, search it
+- open {@Web.search=google drive} website
+- open {@Web.search=paypal} in browser
+- open {@Web.search=pinterest.com}
+- open the page {@Web.search=microsoft.com}
+- open the web page for {@Web.search=royal mail.com}
+- open the web page {@Web.search=yahoo.com}
+- open the web {@Web.search=windows phone.com}
+- open the {@Web.search=wiki} website please
+- open to {@Web.search=twitter.com}
+- open up {@Web.search=amazon.com} for me
+- open up {@Web.search=reddit.com} in google chrome
+- open up the website {@Web.search=arrow fastener.com}
+- open up {@Web.search=wigtypes.com}
+- open {@Web.search=video.com}
+- open {@Web.search=wiki} for me
+- open {@Web.search=wiki} in google
+- open {@Web.search=wikipedia homepage} in bing
+- open {@Web.search=www. amazon.com}
+- open {@Web.search=www.wikipedia.com}
+- open your browser and find a {@Web.search=book} to read
+- open your browser and find a {@Web.search=song} to listen to
+- {@Web.search=outlook.com} on edge
+- please go to {@Web.search=www.wikipedia.com}
+- please navigate to {@Web.search=aol}
+- please navigate to {@Web.search=www.wikipedia.com}
+- please open {@Web.search=www.wikipedia.com}
+- please search {@Web.search=prince harry’s last name} on www.google.com
+- please turn to {@Web.search=www.wikipedia.com}
+- query {@Web.search=2019} in bing.com
+- query one {@Web.search=refrigerator in taobao}
+- query some {@Web.search=books on amazon}
+- search {@Web.search=china} in bing
+- search {@Web.search=luis} in bing
+- search {@Web.search=skiing skills} in bing
+- search {@Web.search=teachers day} in google.com.hk
+- search {@Web.search=thanksgiving} day on bing
+- search the {@Web.search=cookbook} named {@Web.search=sweet paul}
+- search the {@Web.search=movie} named {@Web.search=toy story}
+- seek the {@Web.search=seasonal vegetables} in bing
+- show me the {@Web.search=aol homepage}
+- start {@Web.search=att.com} website
+- start {@Web.search=facebook.com}
+- surf to {@Web.search=google.com}
+- switch to bing to find some {@Web.search=rock books}
+- take me to bing.com
+- take me to {@Web.search=facebook}
+- take me to {@Web.search=facebook.com}
+- take me to {@Web.search=google maps}.
+- take me to {@Web.search=kanye west's website}
+- take me to {@Web.search=kohl's website} please.
+- take me to the {@Web.search=first citizens} website.
+- take me to the {@Web.search=wiki} website
+- take me to {@Web.search=wiki}
+- take me to {@Web.search=yahoo.com}
+- visit {@Web.search=the nstu homepage}
+- visit {@Web.search=www.foxnews.com}
+- want to see {@Web.search=historical exhibitions} in bing
+- website {@Web.search=fox news}
+- what is {@Web.search=fox news' top story}
+- what is {@Web.search=good friday}
+- what is this {@Web.search=election results}
+- {@Web.search=www.read.amazon.com}
+- {@Web.search=www.twitter.com}
+- {@Web.search=www.wikipedia.com} please
+- [please] (open|start) {@Web.suggestion} [and] (find|search|query) [out] [(a[n]|one)] {Web.search} to
+
+
+> # Entity definitions
+
+@ ml department.types
+    - @ ml eee
+    - @ ml ice
+    - @ ml cse
+
+
+@ ml Web.search
+    - @ ml url
+
+
+
+> # PREBUILT Entity definitions
+
+@ prebuilt url
+
+
+> # Phrase list definitions
+
+
+> # List entities
+
+@ list Web.suggestion hasRoles www.google.com,google.com = 
+	- chittagong  university :
+	- google :
+	- youtube :
+	- Noakhali Science and Technology university! :
+		- nstu
+	- dhaka university :
+	- rajshahi university :
+	- jahangirnagar  university :
+	- shahjalal  university :
+
+
+> # RegEx entities
+
+
